@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Upload Images</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">PNG Image combiner (Virtical)</h1>
+        <p class="text-danger">NOTE: Make sure width should be same, and height can be different.</p>
+
+        <form method="post" action="/upload" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="image1">Image 1</label>
+                <input type="file" class="form-control-file" id="image1" name="image1" required>
+            </div>
+            <div class="form-group">
+                <label for="image2">Image 2</label>
+                <input type="file" class="form-control-file" id="image2" name="image2" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Combine Images</button>
+        </form>
+    </div>
+</body>
+</html>
